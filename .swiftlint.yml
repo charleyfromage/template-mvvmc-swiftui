@@ -1,0 +1,28 @@
+included: # paths to include during linting. `--path` is ignored if present.
+    - Teckila/Config
+    - Teckila/Application
+    - Teckila/Router
+    - Teckila/Factories
+    - Teckila/Flows
+    - Teckila/Utils
+
+excluded:
+    - Teckila/Utils/Extensions/UIView+Helpers.swift
+
+disabled_rules: # rule identifiers to exclude from running
+    - line_length
+    - identifier_name
+    - switch_case_alignment
+    - large_tuple
+    - file_length
+    - type_name
+    - nesting
+    - inert_defer
+    - function_body_length
+
+
+colon: 
+    flexible_right_spacing: true
+
+cyclomatic_complexity:
+    ignores_case_statements: true
